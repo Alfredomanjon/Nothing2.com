@@ -28,6 +28,9 @@
         <a class="nav-link" href="AccederUsuario.php">AccederUsuario</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="checkout.php">checkout</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
