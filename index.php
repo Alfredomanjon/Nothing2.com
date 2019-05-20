@@ -14,10 +14,37 @@
 </head>
 <body>
 <?php
-
     include 'navbar.php';
-
 ?>
-    <a href="AccederUsuario.php">Acceder Usuario</a>
+<!-- 
+   Sacar  
+-->
+<section class="container">
+    <article class="container-fluid">
+        <div clas="row">
+            <div class="col-12">
+                
+            </div>
+        </div>
+    </article>
+</section>
+<section class="container">
+    <article class="container-fluid">
+        <div clas="row">
+            <div class="col-12">
+            
+            </div>
+        </div>
+    </article>
+</section>
+<section class="container">
+    <article class="container-fluid">
+        <div clas="row">
+            <div class="col-12">
+            
+            </div>
+        </div>
+    </article>
+</section>
 </body>
 </html>
