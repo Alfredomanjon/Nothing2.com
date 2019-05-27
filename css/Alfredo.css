@@ -38,10 +38,6 @@ a:link {
 text-decoration:none; 
 } 
 
-
-.container {
-    padding-bottom: 20%;
-}
 .tituloInicio{
     text-align: center;
     padding-top: 5%;
@@ -99,4 +95,7 @@ text-decoration:none;
 .tituloProductos{
     text-align: center;
     padding: 5%;
+}
+.page-footer{
+    margin-top: 10%;
 }
