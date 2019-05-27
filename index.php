@@ -37,13 +37,14 @@
 
 <br>
 <div>
-    <h3 class="centroInicio">Compratelos al mejor precio</h3>
+    <h3 class="centroInicio">Cómpratelos al mejor precio</h3>
 </div>
 <?php
 
     $sql = "SELECT * FROM productos";
     $result1 = $conn->query($sql);
-
+    echo "<div class='container'>";
+    echo "<div class='container-fluid'>";
     echo "<div class='row col-12'>";
     if ($result1->num_rows > 0) {
 
@@ -73,7 +74,8 @@
       } else {
         echo "0 results";
       }
-
+      echo "</div>";
+      echo "</div>";
       echo "</div>";
 
     }
