@@ -33,7 +33,7 @@ if(isset($_SESSION['nombre'])){
    $result = $conn->query($sql);
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
   <a class="navbar-brand" href="index.php">
     <img src="imgs/logo100px.png" width="120" class="logo2">
   </a>
@@ -50,6 +50,9 @@ if(isset($_SESSION['nombre'])){
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Perfil.php">Usuario</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="AccederUsuario.php">Sobre Nosotros</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -72,7 +75,7 @@ if(isset($_SESSION['nombre'])){
 <?php
 }else{?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
   <a class="navbar-brand" href="index.php">
     <img src="imgs/logo100px.png" width="120" class="logo2">
   </a>
@@ -90,11 +93,14 @@ if(isset($_SESSION['nombre'])){
       <li class="nav-item">
         <a class="nav-link" href="Perfil.php">Perfil</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="AccederUsuario.php">Sobre Nosotros</a>
+      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <img src="http://pluspng.com/img-png/customers-icon-image-35910-600.png" width="20">
       <button type="button" class="btn btn-link text-secondary">Hazte Cliente</button>
-      <a href="Perfil.php.php" class="btn btn-secondary my-2 my-sm-0">Entrar a tu cuenta</a>
+      <a href="Perfil.php" class="btn btn-secondary my-2 my-sm-0">Entrar a tu cuenta</a>
     </form>
   </div>
 </nav>

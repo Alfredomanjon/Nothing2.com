@@ -16,7 +16,7 @@
 .tituloInicio{
     text-align: center;
     padding-top: 5%;
-    padding-bottom: 5%;
+    font-size: 500%;
 }
 .center{
     margin-left: auto;
@@ -30,7 +30,20 @@
 }
 .centro{
     text-align: center;
+
 }
 .nav>li {
     display:inline-block;
+}
+.MenuInicio{
+    color: white;
+    padding-top: 10%;
+    background-image: url("http://www.frcapitalrealty.com/wp-content/uploads/2014/11/Fotolia_68929203_L.jpg");
+    background-position: center center;
+    background-size: 100%;
+    padding-bottom: 13%;
+}
+.tituloProductos{
+    text-align: center;
+    padding: 5%;
 }

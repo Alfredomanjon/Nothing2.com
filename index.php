@@ -26,8 +26,17 @@
     }else{
 ?>
 
-<h1 class="tituloInicio">Compra "Nada" al mejor precio</h1>
+<div class="MenuInicio">
 
+    <h1 class="tituloInicio"> Nothing.com</h1>
+    <h3 class="centro">Compratelos al mejor precio</h3>
+    
+    
+</div>
+<br>
+<div>
+    <h1 class="tituloProductos">Nuestros Productos</h1>
+</div>
 <?php
 
     $sql = "SELECT * FROM productos";
@@ -41,11 +50,14 @@
             
             echo "<div class='col-3'>";
             echo "<div class='producto rounded'>";
+            echo "<br>";
             echo "<div class='imagenProducto'>";
             echo "<img src=".$row["Foto"]." class='center' id='Nada'>";
             echo "</div>";
+            echo "<br>";
             echo "<h3 class='centro'>".$row["Nombre"]."</h3>";
             echo "<h3 class='centro'>".$row["Precio"]."€</h3>";
+            echo "<br>";
             echo "</div>";
             echo "</div>";
             
