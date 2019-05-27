@@ -11,7 +11,16 @@
     padding-top: 3%;
 }
 .producto{
-    background-color: #00A1FF;
+    border: 5px solid;
+    border-image-source: linear-gradient(to right, #c00000, #00A1FF);
+    border-image-slice: 1;     
+    height: 100%;
+    
+}
+
+
+.container {
+    padding-bottom: 20%;
 }
 .tituloInicio{
     text-align: center;
@@ -23,8 +32,9 @@
     text-shadow: 5px 5px white;
 }
 .bajoTitulo{
-    z-index: -1;
+    position: relative;
     margin-left: 64%;
+    margin-right: 36%;
     margin-top: -2.1%;
     background: linear-gradient(to right, #c00000 35%, #00A1FF 65%);
 	-webkit-background-clip: text;
@@ -52,7 +62,7 @@
 }
 .centro{
     text-align: center;
-
+    margin: 2%;
 }
 .nav>li {
     display:inline-block;
@@ -63,6 +73,7 @@
     background-image: url("http://www.frcapitalrealty.com/wp-content/uploads/2014/11/Fotolia_68929203_L.jpg");
     background-position: center center;
     background-size: 100%;
+    /*este padding hay que quitarlo una vez haya footer*/
     padding-bottom: 14%;
 }
 .tituloProductos{
