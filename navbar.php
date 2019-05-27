@@ -35,7 +35,7 @@ if(isset($_SESSION['nombre'])){
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
   <a class="navbar-brand" href="index.php">
-    <img src="imgs/logo100px.png" width="120" class="logo2">
+    <img src="imgs/logo100px.png" width="140" class="logo2">
   </a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -77,7 +77,7 @@ if(isset($_SESSION['nombre'])){
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
   <a class="navbar-brand" href="index.php">
-    <img src="imgs/logo100px.png" width="120" class="logo2">
+    <img src="imgs/logo100px.png" width="140" class="logo2">
   </a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
