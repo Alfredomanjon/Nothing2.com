@@ -40,12 +40,12 @@
         while($row = $result1->fetch_assoc()) {
             
             echo "<div class='col-3'>";
-            echo "<div class='producto'>";
+            echo "<div class='producto rounded'>";
             echo "<div class='imagenProducto'>";
-            echo "<img src=".$row["Foto"]." id='Nada'>";
+            echo "<img src=".$row["Foto"]." class='center' id='Nada'>";
             echo "</div>";
             echo "<h3 class='centro'>".$row["Nombre"]."</h3>";
-            echo "<h3 class='centro'>".$row["Precio"]."</h3>";
+            echo "<h3 class='centro'>".$row["Precio"]."€</h3>";
             echo "</div>";
             echo "</div>";
             
