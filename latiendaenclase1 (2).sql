@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 10-05-2019 a las 14:35:16
+-- Tiempo de generación: 27-05-2019 a las 12:02:29
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.1.26
 
@@ -37,14 +37,6 @@ CREATE TABLE `pedidos` (
   `Fecha` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
 
---
--- RELACIONES PARA LA TABLA `pedidos`:
---   `Id_Usuario`
---       `usuarios` -> `Id`
---   `Id_pedido`
---       `pedidos_detail` -> `id_pedido`
---
-
 -- --------------------------------------------------------
 
 --
@@ -59,10 +51,6 @@ CREATE TABLE `pedidos_detail` (
   `cantidad_producto` int(11) NOT NULL,
   `precio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
-
---
--- RELACIONES PARA LA TABLA `pedidos_detail`:
---
 
 -- --------------------------------------------------------
 
@@ -79,10 +67,12 @@ CREATE TABLE `productos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
 
 --
--- RELACIONES PARA LA TABLA `productos`:
---   `id_producto`
---       `pedidos_detail` -> `id_producto`
+-- Volcado de datos para la tabla `productos`
 --
+
+INSERT INTO `productos` (`id_producto`, `Nombre`, `Precio`, `Foto`) VALUES
+(5, 'Paquete de Nada 1', 21, 'https://www.raimapapers.cat/7321-large_default/caja-blanca-25x28x15-hecho-a-medida.jpg'),
+(6, 'Sobre de Nada', 3, 'https://http2.mlstatic.com/sobre-blanco-obra-19x24-cm-250-unidades-D_NQ_NP_960609-MLA26156014098_102017-Q.jpg');
 
 -- --------------------------------------------------------
 
@@ -101,15 +91,12 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_spanish_ci;
 
 --
--- RELACIONES PARA LA TABLA `usuarios`:
---
-
---
 -- Volcado de datos para la tabla `usuarios`
 --
 
 INSERT INTO `usuarios` (`Id`, `Nick`, `Password`, `Nombre`, `Apellido`, `Correo`) VALUES
-(1, 'Alfred', '1234', 'Alfredo', 'Manjon', 'Hola@gmail.com');
+(1, 'Alfred', '1234', 'Alfredo', 'Manjon', 'Hola@gmail.com'),
+(2, 'Paco', '4321', 'Paco', 'Palotes', 'PalotePaco@gmail.com');
 
 --
 -- Índices para tablas volcadas
@@ -156,13 +143,13 @@ ALTER TABLE `pedidos_detail`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
@@ -176,10 +163,10 @@ ALTER TABLE `pedidos`
   ADD CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`Id_pedido`) REFERENCES `pedidos_detail` (`id_pedido`);
 
 --
--- Filtros para la tabla `productos`
+-- Filtros para la tabla `pedidos_detail`
 --
-ALTER TABLE `productos`
-  ADD CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`id_producto`) REFERENCES `pedidos_detail` (`id_producto`);
+ALTER TABLE `pedidos_detail`
+  ADD CONSTRAINT `pedidos_detail_ibfk_1` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
