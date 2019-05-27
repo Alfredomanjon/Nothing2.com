@@ -28,10 +28,12 @@
 
 <div class="MenuInicio">
 
-    <h1 class="tituloInicio"> Nothing.com</h1>
+    <h1 class="tituloInicio"> Nothing 2 buy</h1>
+    <p></p>
     
-    
-    
+</div>
+<div class="bajoTitulo">
+        <p>Nothing.com</p>
 </div>
 <br>
 <div>
