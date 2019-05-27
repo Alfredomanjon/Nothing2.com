@@ -30,11 +30,11 @@
 
     <h1 class="tituloInicio"> Nothing 2 buy</h1>
     <p></p>
-    
+    <div class="bajoTitulo">
+        <h4>Nothing.com</h4>
+    </div>
 </div>
-<div class="bajoTitulo">
-        <p>Nothing.com</p>
-</div>
+
 <br>
 <div>
     <h1 class="tituloProductos">Nuestros Productos</h1>

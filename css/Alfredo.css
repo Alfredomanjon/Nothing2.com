@@ -24,6 +24,12 @@
 }
 .bajoTitulo{
     z-index: -1;
+    margin-left: 64%;
+    margin-top: -2.1%;
+    background: linear-gradient(to right, #c00000 35%, #00A1FF 65%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px white;
 }
 .center{
     margin-left: auto;
