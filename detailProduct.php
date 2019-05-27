@@ -32,20 +32,36 @@
 <br>
 <div>
     <h3 class="centroInicio"> <?php $var_value = $_GET['id'];
-echo $var_value;
      ?>
    </h3>
 </div>
 <?php
 
-    $sql = "SELECT * FROM productos";
+    $sql = "SELECT * FROM `productos` WHERE id_producto=$var_value";
     $result1 = $conn->query($sql);
-
+    echo "<div class='container'>";
+    echo "<div class='container-fluid'>";
     echo "<div class='row col-12'>";
     if ($result1->num_rows > 0) {
 
         //bucle while en el cual fetch_assoc lo convierte en un array ascociativo
+
         while($row = $result1->fetch_assoc()) {
+            $numId = $row["id_producto"];
+            echo "<div class='col-3 mb-4' id='producto'>";
+            echo "<div class='producto rounded'>";
+            echo "<br>";
+            echo "<div class='imagenProducto'>";
+            echo "<img src=".$row["Foto"]." class='center' id='Nada'>";
+            echo "</div>";
+            echo "<br>";
+            echo "<h3 class='centro'>".$row["Nombre"]."</h3>";
+            echo "<h3 class='centro'>".$row["Precio"]."€</h3>";
+            echo "<br>";
+            //echo "<input type='submit' name='submit' value='Submit' />";
+            echo "</div>";
+            echo "</a>";
+            echo "</div>";
 
 
 
@@ -53,9 +69,9 @@ echo $var_value;
       } else {
         echo "0 results";
       }
-
       echo "</div>";
-
+      echo "</div>";
+      echo "</div>";
     }
 ?>
 
