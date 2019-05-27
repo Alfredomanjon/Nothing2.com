@@ -31,7 +31,10 @@
         <a class="nav-link" href="checkout.php">checkout</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="Perfil.php">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Usuario.php">jjjkj</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

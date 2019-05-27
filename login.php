@@ -9,9 +9,9 @@
     $dbname = "latiendaenclase1";
     $conn = new mysqli($servername, $user,$password,$dbname);
     if ($conn->connect_error) {
-        header("Location: AccederUsuario.php?error=notServer"); 
+        header("Location: AccederUsuario.php?error=notServer");
     }else
-    
+
 
     if(isset($_POST["Usuario"]) && isset($_POST["Contra"])){
 
@@ -28,16 +28,16 @@
 
             $_SESSION["nombre"] = $Usu;
 
-            header("Location: Usuario.php"); 
+            header("Location: Perfil.php");
 
         }else{
-            header("Location: AccederUsuario.php?error=notOK"); 
+            header("Location: AccederUsuario.php?error=notOK");
         }
     }else{
         header("Location: AccederUsuario.php?error=noform");
     }
 
     ?>
-    
+
 </body>
 </html>

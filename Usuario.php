@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+
 <?php
 
 include 'navbar.php';
@@ -22,7 +22,7 @@ if(isset($_SESSION['nombre'])){
   $dbname = "latiendaenclase1";
   $conn = new mysqli($servername, $user,$password,$dbname);
   if ($conn->connect_error) {
-      header("Location: AccederUsuario.php?error=notServer"); 
+      header("Location: AccederUsuario.php?error=notServer");
   }else{
 
 
@@ -35,16 +35,16 @@ if(isset($_SESSION['nombre'])){
   $Nick = $_SESSION['nombre'];
   $sql = "SELECT Nick FROM usuarios WHERE usuarios.Nick = '$Nick'";
   $result1 = $conn->query($sql);
-  
+
   //Saber si la consulta se ha ejecutado
   if ($result1->num_rows > 0) {
 
     //bucle while en el cual fetch_assoc lo convierte en un array ascociativo
     while($row = $result1->fetch_assoc()) {
-        
+
         echo "<h1 class='centro'>Bienvenido ".$row["Nick"]."</h1>";
-        
-        
+
+
     }
   } else {
     echo "0 results";
@@ -57,9 +57,9 @@ if(isset($_SESSION['nombre'])){
     }
 }
 else{
-        header("Location: AccederUsuario.php?error=nosesion"); 
+        header("Location: AccederUsuario.php?error=nosesion");
 }
-    
+
 ?>
 </body>
 </html>
