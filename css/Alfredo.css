@@ -40,7 +40,7 @@ text-decoration:none;
 
 .tituloInicio{
     text-align: center;
-    padding-top: 5%;
+    padding-bottom: 5%;
     font-size: 800%;
 	background: linear-gradient(to right, #c00000 35%, #00A1FF 65%);
 	-webkit-background-clip: text;
