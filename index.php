@@ -29,7 +29,7 @@
 <div class="MenuInicio">
 
     <h1 class="tituloInicio"> Nothing.com</h1>
-    <h3 class="centro">Compratelos al mejor precio</h3>
+    <h3 class="centroInicio">Compratelos al mejor precio</h3>
     
     
 </div>
