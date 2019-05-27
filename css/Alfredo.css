@@ -38,7 +38,10 @@
     margin:0 auto;
 }
 .centroInicio{
-    background: linear-gradient(to right, #c00000 35%, #00A1FF 65%);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 250%;
+    background: linear-gradient(to right, #c00000 35%, #00A1FF 60%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     text-align: center;    
