@@ -6,7 +6,7 @@
     $servername = "localhost";
     $user = "root";
     $password = "";
-    $dbname = "latiendaenclase";
+    $dbname = "latiendaenclase1";
     $conn = new mysqli($servername, $user,$password,$dbname);
     if ($conn->connect_error) {
         header("Location: AccederUsuario.php?error=notServer"); 

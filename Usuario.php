@@ -12,11 +12,14 @@
 
 include 'navbar.php';
 
+session_start();
+
 if(isset($_SESSION['nombre'])){
+  
   $servername = "localhost";
   $user = "root";
   $password = "";
-  $dbname = "banco1";
+  $dbname = "latiendaenclase1";
   $conn = new mysqli($servername, $user,$password,$dbname);
   if ($conn->connect_error) {
       header("Location: AccederUsuario.php?error=notServer"); 

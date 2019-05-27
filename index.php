@@ -15,36 +15,52 @@
 <body>
 <?php
     include 'navbar.php';
+
+    $servername = "localhost";
+    $user = "root";
+    $password = "";
+    $dbname = "latiendaenclase1";
+    $conn = new mysqli($servername, $user,$password,$dbname);
+    if ($conn->connect_error) {
+        header("Location: AccederUsuario.php?error=notServer"); 
+    }else{
 ?>
-<!-- 
-   Sacar  
--->
-<section class="container">
-    <article class="container-fluid">
-        <div clas="row">
-            <div class="col-12">
-                
-            </div>
-        </div>
-    </article>
-</section>
-<section class="container">
-    <article class="container-fluid">
-        <div clas="row">
-            <div class="col-12">
+
+<h1 class="tituloInicio">Compra "Nada" al mejor precio</h1>
+
+<?php
+
+    $sql = "SELECT * FROM productos";
+    $result1 = $conn->query($sql);
+
+    echo "<div class='row col-12'>";
+    if ($result1->num_rows > 0) {
+
+        //bucle while en el cual fetch_assoc lo convierte en un array ascociativo
+        while($row = $result1->fetch_assoc()) {
             
-            </div>
-        </div>
-    </article>
-</section>
-<section class="container">
-    <article class="container-fluid">
-        <div clas="row">
-            <div class="col-12">
+            echo "<div class='col-3'>";
+            echo "<div class='producto'>";
+            echo "<div class='imagenProducto'>";
+            echo "<img src=".$row["Foto"]." id='Nada'>";
+            echo "</div>";
+            echo "<h3 class='centro'>".$row["Nombre"]."</h3>";
+            echo "<h3 class='centro'>".$row["Precio"]."</h3>";
+            echo "</div>";
+            echo "</div>";
             
-            </div>
-        </div>
-    </article>
-</section>
+            
+        }
+      } else {
+        echo "0 results";
+      }
+
+      echo "</div>";
+
+    }
+?>
+
+
+
 </body>
 </html>
