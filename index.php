@@ -53,7 +53,7 @@
         while($row = $result1->fetch_assoc()) {
             $numId = $row["id_producto"];
           echo "<a href='detailProduct.php?id=$numId'>";
-            echo "<div class='col-3' id='producto'>";
+            echo "<div class='col-3 mb-4' id='producto'>";
             echo "<div class='producto rounded'>";
             echo "<br>";
             echo "<div class='imagenProducto'>";
@@ -63,7 +63,7 @@
             echo "<h3 class='centro'>".$row["Nombre"]."</h3>";
             echo "<h3 class='centro'>".$row["Precio"]."€</h3>";
             echo "<br>";
-            echo "<input type='submit' name='submit' value='Submit' />";
+            //echo "<input type='submit' name='submit' value='Submit' />";
             echo "</div>";
             echo "</a>";
             echo "</div>";
