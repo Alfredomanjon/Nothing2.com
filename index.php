@@ -29,13 +29,13 @@
 <div class="MenuInicio">
 
     <h1 class="tituloInicio"> Nothing.com</h1>
-    <h3 class="centroInicio">Compratelos al mejor precio</h3>
+    
     
     
 </div>
 <br>
 <div>
-    <h1 class="tituloProductos">Nuestros Productos</h1>
+    <h3 class="centroInicio">Compratelos al mejor precio</h3>
 </div>
 <?php
 
