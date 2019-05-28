@@ -29,7 +29,7 @@
 
 <div class="MenuInicio">
 
-    <h1 class="tituloInicio"> Nothing 2 buy</h1>
+    <h1 class="tituloInicio" > Nothing 2 buy</h1>
     <p></p>
     <div class="bajoTitulo">
         <h4>Nothing.com</h4>
@@ -46,7 +46,8 @@
 
 <br>
 <div>
-    <h3 class="centroInicio">Cómpratelos al mejor precio</h3>
+<br>
+    <h3 class="centroInicio" id="red">Cómpralos al mejor precio</h3>
 </div>
 <?php
 
