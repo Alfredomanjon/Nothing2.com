@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	   <script src="detailProduct.js"></script>
     <link rel=StyleSheet href="css/Alfredo.css" type="text/css" media=screen>
     <link rel="icon" type="image/jpg" href="imagenes/logo_copia1.png">
 </head>
@@ -27,27 +27,17 @@
     }else{
 ?>
 
-<div class="MenuInicio">
 
-    <h1 class="tituloInicio"> Nothing 2 buy</h1>
-    <p></p>
-    <div class="bajoTitulo">
-        <h4>Nothing.com</h4>
-    </div>
-    <div class="arrow">
-      <a  href="#producto">
-        <img src="imgs/arrowdown.gif" width="140">
-      </a>
-    </div>
-</div>
 
 <br>
 <div>
-    <h3 class="centroInicio">Cómpratelos al mejor precio</h3>
+    <h3 class="centroInicio"> <?php $var_value = $_GET['id'];
+     ?>
+   </h3>
 </div>
 <?php
 
-    $sql = "SELECT * FROM productos";
+    $sql = "SELECT * FROM `productos` WHERE id_producto=$var_value";
     $result1 = $conn->query($sql);
     echo "<div class='container'>";
     echo "<div class='container-fluid'>";
@@ -58,7 +48,6 @@
 
         while($row = $result1->fetch_assoc()) {
             $numId = $row["id_producto"];
-          echo "<a href='detailProduct.php?id=$numId'>";
             echo "<div class='col-3 mb-4' id='producto'>";
             echo "<div class='producto rounded'>";
             echo "<br>";
@@ -83,57 +72,10 @@
       echo "</div>";
       echo "</div>";
       echo "</div>";
-
     }
 ?>
 
 
 
 </body>
-
-<!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!--Grid row-->
-    <div class="row">
-
-      <!--Grid column-->
-      <div class="col-md-6 mb-4">
-
-        <!-- Form -->
-        <form class="form-inline">
-          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-            aria-label="Search">
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </form>
-        <!-- Form -->
-
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-6 mb-4">
-
-        <form class="input-group">
-          <input type="text" class="form-control form-control-sm" placeholder="Your email"
-            aria-label="Your email" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
-          </div>
-        </form>
-
-      </div>
-      <!--Grid column-->
-
-    </div>
-    <!--Grid row-->
-
-  </div>
-  <!-- Footer Elements -->
-</footer>
-<!-- Footer -->
-
 </html>

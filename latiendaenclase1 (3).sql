@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 27-05-2019 a las 12:02:29
+-- Tiempo de generación: 27-05-2019 a las 17:24:31
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.1.26
 
@@ -71,8 +71,14 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id_producto`, `Nombre`, `Precio`, `Foto`) VALUES
-(5, 'Paquete de Nada 1', 21, 'https://www.raimapapers.cat/7321-large_default/caja-blanca-25x28x15-hecho-a-medida.jpg'),
-(6, 'Sobre de Nada', 3, 'https://http2.mlstatic.com/sobre-blanco-obra-19x24-cm-250-unidades-D_NQ_NP_960609-MLA26156014098_102017-Q.jpg');
+(5, 'Paquete de Nada', 21, 'https://www.raimapapers.cat/7321-large_default/caja-blanca-25x28x15-hecho-a-medida.jpg'),
+(6, 'Sobre de Nada', 3, 'https://http2.mlstatic.com/sobre-blanco-obra-19x24-cm-250-unidades-D_NQ_NP_960609-MLA26156014098_102017-Q.jpg'),
+(7, 'Caja sorpresa de Nada', 234, 'https://kartox.com/media/catalog/product/cache/1/image/940x940/9df78eab33525d08d6e5fb8d27136e95/k/a/kartox_caja-con-solapas-blanca_1.jpg'),
+(8, 'Camiseta \"Nothing\"', 23, 'https://tienda1.mobiliarioshunfa.com/15820-large_default/percha-blanca-de-madera-con-muescas-y-pinzas-45-cm.jpg'),
+(9, 'Movil \"Nothing\"', 34, 'https://www.movilconsolas.com/images/productos/thumbnails/ventana-tactil-samsung-galaxy-i7500-blanca-1-5484_thumb_449x449.png'),
+(10, 'Mac \"Nothing\"', 4110, 'https://files.beetstech.com/wp-content/uploads/CMP-6255-UTWx_WEB-1600x1600.jpg'),
+(11, 'Poto de Invierno', 48, 'https://mobica.vteximg.com.br/arquivos/ids/162928-1000-1000/233A9796.jpg?v=636595881302030000\r\n\r\n'),
+(12, 'Gafas para realidad virtual', 341, 'https://images-na.ssl-images-amazon.com/images/I/41U1DJTueZL.jpg');
 
 -- --------------------------------------------------------
 
@@ -143,7 +149,7 @@ ALTER TABLE `pedidos_detail`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

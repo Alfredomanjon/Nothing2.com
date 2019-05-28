@@ -33,14 +33,14 @@ if(isset($_SESSION['nombre'])){
    $result = $conn->query($sql);
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="index.php">
-    <img src="imgs/logo100px.png" width="120" class="logo2">
+    <img src="imgs/logo100px.png" width="140" class="logo2">
   </a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
     <li class="nav-item">
-        <a class="nav-link" href="index.php">Nuevos Productos</a>
+        <a class="nav-link" href="index.php">Productos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="AccederUsuario.php">AccederUsuario</a>
@@ -75,14 +75,14 @@ if(isset($_SESSION['nombre'])){
 <?php
 }else{?>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="index.php">
-    <img src="imgs/logo100px.png" width="120" class="logo2">
+    <img src="imgs/logo100px.png" width="140" class="logo2">
   </a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
     <li class="nav-item">
-        <a class="nav-link" href="index.php">Nuevos Productos</a>
+        <a class="nav-link" href="index.php">Productos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="AccederUsuario.php">AccederUsuario</a>
