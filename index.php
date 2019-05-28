@@ -35,10 +35,13 @@
         <h4>Nothing.com</h4>
     </div>
     <div class="arrow">
-      <a  href="#producto">
+      <a  href="#flecha">
         <img src="imgs/arrowdown.gif" width="140">
+      </div>
+      <div id="flecha">
+      </div>
       </a>
-    </div>
+
 </div>
 
 <br>
