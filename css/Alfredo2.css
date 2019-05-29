@@ -21,21 +21,54 @@ html{
     width: 100%;
     transition: all 0.6s;
     color: black;
+    animation: mymove 5s infinite;
+}
+$anime-time    : 8s;
+$box-size      : 200px;
+$clip-distance : .01;
+$clip-size     : $box-size * (1 + $clip-distance * 2);
+$path-width    : 2px;
+$working-animation-color: #8c9bf9;
 
+%full-fill {
+  position : absolute;
+  top      : 0;
+  bottom   : 0;
+  left     : 0;
+  right    : 0;
 }
 
-.producto.rounded:hover{
+.working {
+  @extend %full-fill;
+  width      : $box-size;
+  height     : $box-size;
+  margin     : auto;
+  // box-shadow: inset 0 0 0 1px rgba($working-animation-color, .5);  // inner order
 
-    border: 5px solid;
-    border-image-source: linear-gradient(to right, #c00000 , #00A1FF);
-    border-image-slice: 1;
-    height: 103%;
-    width: 103%;
-    transition: all 0.6s;
-    color: black;
+  &::before,
+  &::after {
+    @extend %full-fill;
+    color      : $working-animation-color;
+    content    : '';
+    z-index    : -1;
+    margin     : -1 * $clip-distance * 100%;
+    box-shadow : inset 0 0 0 $path-width;
+    animation  : clipMe $anime-time linear infinite;
+  }
 
-
+  &::before {
+    animation-delay: $anime-time * -.5;
+  }
 }
+
+@keyframes clipMe {
+  0%, 100% {clip: rect(0px, $clip-size, $path-width, 0px); }
+  25%      {clip: rect(0px, $path-width, $clip-size, 0px); }
+  50%      {clip: rect($clip-size - $path-width, $clip-size, $clip-size, 0px); }
+  75%      {clip: rect(0px, $clip-size, $clip-size, $clip-size - $path-width); }
+}
+
+
 
 
 
