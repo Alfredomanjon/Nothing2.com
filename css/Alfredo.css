@@ -3,6 +3,20 @@ html{
 }
 .fondo1{
     text-align: center;
+    background-image: url("http://73mm.com.pe/wp-content/uploads/2015/07/foto3.jpg");
+    background-position: center center;
+    background-size: 110%;
+
+}
+
+.BordeInicio{
+    opacity: 1;
+
+
+}
+
+.Background{
+    background-color:rgba(255,255,255,0.8);
 }
 .espacio1{
     padding-top: 10%;
@@ -38,10 +52,24 @@ html{
 }
 
 
+/* .navbar {
+  background-color: transparent !important;
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 120%;
+}  */
 
 
 a:link {
 text-decoration:none;
+}
+
+.navbar{
+    box-shadow: 1px 1px 1px white;
 }
 
 .tituloInicio{
@@ -78,6 +106,10 @@ text-decoration:none;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     text-align: center;
+    opacity: 1;
+}
+.botonico{
+    background: linear-gradient(to right, #c00000 35%, #00A1FF 60%);
 }
 #Nada{
     width: 50%;

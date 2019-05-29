@@ -32,7 +32,7 @@ if(isset($_SESSION['nombre'])){
    $sql = "SELECT * FROM usuarios WHERE usuarios.Nick = '$Nick'";
    $result = $conn->query($sql);
 ?>
-
+<header>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="index.php">
     <img src="imgs/logo100px.png" width="140" class="logo2">
@@ -71,10 +71,12 @@ if(isset($_SESSION['nombre'])){
             </form>
   </div>
 </nav>
+</header>
 
 <?php
 }else{?>
 
+<header>
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="index.php">
     <img src="imgs/logo100px.png" width="140" class="logo2">
@@ -98,13 +100,13 @@ if(isset($_SESSION['nombre'])){
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <img src="http://pluspng.com/img-png/customers-icon-image-35910-600.png" width="20">
-      <button type="button" class="btn btn-link text-secondary">Hazte Cliente</button>
-      <a href="Perfil.php" class="btn btn-secondary my-2 my-sm-0">Entrar a tu cuenta</a>
+      <button type="button" class=" btn btn-link text-secondary">Hazte Cliente</button>
+      <a href="Perfil.php" class=" btn btn-secondary my-2 my-sm-0">Entrar a tu cuenta</a>
     </form>
   </div>
 </nav>
 
+</header>
 <?php
 }
 ?>

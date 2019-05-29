@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MAZBank/Usuario</title>
+    <title>Nothing/Usuario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -26,10 +26,11 @@
 
   <div class="fondo1">
     <div class="espacio1"></div>
+    <div class="Background col-4 offset-lg-4">
     <div class="row">
-      <div class="BordeInicio col-4 offset-lg-4">
+      <div class="BordeInicio col-12">
         <div class="espacio1"></div>
-        <h2 class="Inicio">Inicia sesion para comprar(Nada)</h2>
+        <h2 class="centroInicio" id="red">Inicia sesion a tu cuenta</h2>
         <div class="espacio1"></div>
         <form id="formulario" action="login.php" method="post">
           <label>Usuario</label><br>
@@ -39,7 +40,7 @@
           <div class="espacio1"></div>
           <div class="botones col-12">
             <input type="submit" class="btn btn btn-dark col-5">
-            <a class="btn btn btn-dark col-5" href = "CrearCliente.php">No tienes cuenta?</a>
+            <a class="btn btn btn-dark col-5" id="red" href = "CrearCliente.php">No tienes cuenta?</a>
           </div>
           <div class="espacio4"></div>
           </form>
@@ -66,6 +67,7 @@
       </div>
       <div class="espacio1"></div>
       <div class="espacio1"></div>
+      </div>
     </div>
     <div class="espacio1"></div>
   </div>
