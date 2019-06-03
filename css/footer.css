@@ -13,9 +13,10 @@
 }
 #footer.show
 {
+    background-image: linear-gradient(to bottom, #ffffff, #f0dcfa, #f4b3e4, #fe85ba, #ff517e, #ff3f6c, #ff2959, #ff0045, #f80069, #df0093, #a900c0, #001ae8);
     position: fixed;
-    height: 100px;
-    margin-bottom: 1%;
+    height: 13%;
+
    -moz-transition:all 0.5s ease-in-out;
    -o-transition:all 0.5s ease-in-out;
    transition:all 0.5s ease-in-out;
