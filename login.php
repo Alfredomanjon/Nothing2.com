@@ -27,6 +27,8 @@
             session_start();
 
             $_SESSION["nombre"] = $Usu;
+			$_SESSION['numProductos'] = 0;
+			$_SESSION['carrito'] = array();
 
             header("Location: Perfil.php");
 
