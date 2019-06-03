@@ -43,6 +43,8 @@
     <body class="bg-light">
 
       <div class="container">
+        <br><br>
+
         <div class="py-5 text-center">
 
           <h2>Tu Perfil sin Nada</h2>
@@ -63,9 +65,13 @@
             <?php echo "Correo: " . $row["Correo"]  ?>
           </div>
         </div>
-        <div class="row1 text-center">
-          <div class="col-8 ">
+        <div class="row text-center">
+          <div class="col-6 ">
             <br><a href="listaDeseados.php"><img src="imgs/listaDeseados.png" alt="listaDeseados" style="width:128px;height:128px;">
+          </div>
+          <div class="col-5 ">
+            <br><a href="ModificarUsuario.php"><img src="imgs/9e7f16e0-af19-4a8b-89a2-78faa8aad2fb_200x200.png" alt="Settings" style="width:128px;height:128px;">
+          </div>
             </div>
           </div>
           <?php
