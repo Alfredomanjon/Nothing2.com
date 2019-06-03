@@ -1,6 +1,6 @@
 $(function(){
     $(window).scroll(function() {  
-        if($(document).scrollTop() > 800)
+        if($(document).scrollTop() > 850)
         {    
             $('#footer').addClass("show");
         }
