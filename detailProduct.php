@@ -39,7 +39,7 @@
 
     $sql = "SELECT * FROM `productos` WHERE id_producto=$var_value";
     $result1 = $conn->query($sql);
-    echo "<div class='container working'>";
+    echo "<div class='container rainbow_border'>";
     echo "<div class='container-fluid'>";
     echo "<div class='row col-12'>";
     if ($result1->num_rows > 0) {
@@ -58,7 +58,7 @@
             echo "<h3 class='centro2'>".$row["Nombre"]."</h3>";
             echo "<h3 class='centro2'>".$row["Precio"]."€</h3>";
             echo "<br>";
-            //echo "<input type='submit' name='submit' value='Submit' />";
+            echo "<input type='submit' name='submit' class='boton' value='Submit' />";
             echo "</div>";
             echo "</a>";
             echo "</div>";
