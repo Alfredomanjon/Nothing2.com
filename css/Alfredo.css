@@ -1,6 +1,8 @@
 html{
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
+bode
 .fondo1{
     text-align: center;
     background-image: url("http://73mm.com.pe/wp-content/uploads/2015/07/foto3.jpg");
@@ -147,4 +149,8 @@ text-decoration:none;
 }
 .page-footer{
     margin-top: 10%;
+}
+
+#marginFooter {
+    margin-bottom: 6%;
 }
