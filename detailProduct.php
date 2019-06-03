@@ -58,7 +58,8 @@
             echo "<h3 class='centro2'>".$row["Nombre"]."</h3>";
             echo "<h3 class='centro2'>".$row["Precio"]."€</h3>";
             echo "<br>";
-            echo "<input type='submit' name='submit' class='boton' value='Submit' />";
+			$idProduct = $row["id_producto"];
+			echo "<a href='addCarrito.php?id_producto=$idProduct' > Añadir al carrito </a>";
             echo "</div>";
             echo "</a>";
             echo "</div>";

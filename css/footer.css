@@ -1,0 +1,33 @@
+#footer 
+{
+    background:cross-fade();
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    overflow:none;
+    
+   -moz-transition:all 0.5s ease-in-out;
+   -o-transition:all 0.5s ease-in-out;
+   transition:all 0.5s ease-in-out;
+   -webkit-transition:all 0.5s ease-in-out;
+}
+#footer.show
+{
+    position: fixed;
+    height: 100px;
+    margin-bottom: 1%;
+   -moz-transition:all 0.5s ease-in-out;
+   -o-transition:all 0.5s ease-in-out;
+   transition:all 0.5s ease-in-out;
+   -webkit-transition:all 0.5s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 500%;
+	background: linear-gradient(to right, #c00000 35%, #00A1FF 65%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    text-shadow: 5px 5px white;
+}
