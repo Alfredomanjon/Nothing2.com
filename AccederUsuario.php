@@ -26,17 +26,15 @@
 
   <div class="fondo1">
     <div class="espacio1"></div>
-    <div class="Background col-4 offset-lg-4">
+    <div class="Background col-4 offset-lg-4 rounded">
     <div class="row">
       <div class="BordeInicio col-12">
         <div class="espacio1"></div>
-        <h2 class="centroInicio" id="red">Inicia sesion a tu cuenta</h2>
+        <h2 class="centroInicio" id="red">Accede a tu cuenta</h2>
         <div class="espacio1"></div>
         <form id="formulario" action="login.php" method="post">
-          <label>Usuario</label><br>
-          <input type="text" name="Usuario"> <br>
-          <label>Contraseña</label><br>
-          <input type="password" name="Contra"> <br>
+          <input type="text" class="form-control col-12 offset-lg-3 col-lg-6 text-center" name="N_cuenta" placeholder="Usuario"><br>
+          <input type="text" class="form-control col-12 offset-lg-3 col-lg-6 text-center" name="N_cuenta" placeholder="Contraseña"><br>
           <div class="espacio1"></div>
           <div class="botones col-12">
             <input type="submit" class="btn btn btn-dark col-5">
