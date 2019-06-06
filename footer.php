@@ -1,44 +1,30 @@
-<!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4">
-
-  <!-- Footer Elements -->
-  <div class="container">
-
-    <!--Grid row-->
-    <div class="row">
-
-      <!--Grid column-->
-      <div class="col-md-6 mb-4">
-
-        <!-- Form -->
-        <form class="form-inline">
-          <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-            aria-label="Search">
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </form>
-        <!-- Form -->
-
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-6 mb-4">
-
-        <form class="input-group">
-          <input type="text" class="form-control form-control-sm" placeholder="Your email"
-            aria-label="Your email" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
-          </div>
-        </form>
-
-      </div>
-      <!--Grid column-->
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- links footer -->
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/footer.js"></script>
+    <title>footer</title>
+</head>
+<body>
+    <!-- Footer -->
+<footer >
+<div id="footer">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 animated jackInTheBox text-center">
+                    <a href="index.php"> <h1>Nothing 2 buy</h1> </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--Grid row-->
-
-  </div>
-  <!-- Footer Elements -->
+</div>
 </footer>
 <!-- Footer -->
+</body>
+</html>
+
