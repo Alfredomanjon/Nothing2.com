@@ -12,7 +12,7 @@
         header("Location: AccederUsuario.php?error=notServer");
     }else
 
-
+//crear sesion
     if(isset($_POST["Usuario"]) && isset($_POST["Contra"])){
 
         $Usu = $_POST["Usuario"];
