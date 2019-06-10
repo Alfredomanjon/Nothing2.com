@@ -28,7 +28,7 @@
     }else{
 ?>
 
-<div class="MenuInicio">
+<div class="MenuInicio col-12">
 
     <h1 class="tituloInicio" > Nothing 2 buy</h1>
     <p></p>
@@ -56,7 +56,7 @@
     $result1 = $conn->query($sql);
     echo "<div id='marginFooter' class='container'>";
     echo "<div class='container-fluid'>";
-    echo "<div class='row col-12'>";
+    echo "<div class='productos row'>";
     if ($result1->num_rows > 0) {
 
         //bucle while en el cual fetch_assoc lo convierte en un array ascociativo
@@ -64,7 +64,7 @@
         while($row = $result1->fetch_assoc()) {
             $numId = $row["id_producto"];
           echo "<a href='detailProduct.php?id=$numId'>";
-            echo "<div class='col-3 mb-4' id='producto'>";
+            echo "<div class='col-12 col-lg-3 mb-4' id='producto'>";
             echo "<div class='producto rounded'>";
             echo "<br>";
             echo "<div class='imagenProducto'>";

@@ -18,7 +18,7 @@ bode
 }
 
 .Background{
-    background-color:rgba(255,255,255,0.8);
+    background-color:rgba(255,255,255,0.7);
 }
 .espacio1{
     padding-top: 10%;
@@ -154,4 +154,7 @@ text-decoration:none;
 #marginFooter {
     margin-bottom: 7%;
     padding-bottom: 1%;
+}
+.productos{
+    margin: 0;
 }
