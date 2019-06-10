@@ -30,7 +30,7 @@
 
 <div class="MenuInicio col-12">
 
-    <h1 class="tituloInicio" > Nothing 2 buy</h1>
+    <h1 class="tituloInicio">Nothing 2 buy</h1>
     <p></p>
     <div class="bajoTitulo">
         <h4>Nothing.com</h4>
@@ -64,7 +64,7 @@
         while($row = $result1->fetch_assoc()) {
             $numId = $row["id_producto"];
           echo "<a href='detailProduct.php?id=$numId'>";
-            echo "<div class='col-12 col-lg-3 mb-4' id='producto'>";
+            echo "<div class='col-12 col-md-6 col-lg-3 mb-4' id='producto'>";
             echo "<div class='producto rounded'>";
             echo "<br>";
             echo "<div class='imagenProducto'>";
@@ -92,7 +92,7 @@
     }
     
 
-    include 'footer.php';
+    //include 'footer.php';
 ?>
 </body>
 </html>
