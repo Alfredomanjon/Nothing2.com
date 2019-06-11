@@ -10,12 +10,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <link rel=StyleSheet href="css/Alfredo.css" type="text/css" media=screen>
     <link rel="icon" type="image/jpg" href="imagenes/logo_copia1.png">
-    
+
 </head>
 <body>
 
   <?php
-  
+
    include 'navbar.php';
 
   ?>
@@ -30,7 +30,7 @@
         <div class="espacio1"></div>
         <form id="formulario" action="login.php" method="post">
           <input type="text" class="form-control col-12 offset-lg-3 col-lg-6 text-center" name="Usuario" placeholder="Usuario"><br>
-          <input type="text" class="form-control col-12 offset-lg-3 col-lg-6 text-center" name="Contra" placeholder="Contraseña"><br>
+          <input type="password" class="form-control col-12 offset-lg-3 col-lg-6 text-center" name="Contra" placeholder="Contraseña"><br>
           <div class="espacio1"></div>
           <div class="botones col-12">
             <input type="submit" class="btn btn btn-dark col-5">
