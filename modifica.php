@@ -10,26 +10,39 @@
     $conn = new mysqli($servername, $user,$password,$dbname);
     if ($conn->connect_error) {
         header("Location: ModificarUsuario.php?error=notServer");
-    }else
+    }
+    session_start();
+    var_dump($_POST);
+
+    $Nick= $_SESSION["nombre"];
 
 
-    if(isset($_POST["Nombre"]) && isset($_POST["Apellido"]) && isset($_POST["Nick"]) && isset($_POST["Password"]) && isset($_POST["Correo"])){
+
+    if(isset($_POST["Nombre"]) && isset($_POST["Apellido"]) && isset($_POST["Password"]) && isset($_POST["Correo"])){
+
+echo "<br>PASO POR EL IF";
+
 
         $Nombre = $_POST["Nombre"];
         $Apellido = $_POST["Apellido"];
-        $Nick = $_POST["Nick"];
         $Password = $_POST["Password"];
         $Correo = $_POST["Correo"];
 
-        $sqll = "SELECT Id FROM usuarios WHERE usuarios.Nick = '$Nick' AND usuarios.Password = '$Password' ";
-        console.log($sqll);
         $sql = "UPDATE usuarios
-        SET usuarios.Nombre = '$Nombre', usuarios.Apellido= '$Apellido', usuarios.Nick= '$Nick', usuarios.Password= '$Password', usuarios.Correo= '$Correo'
-        WHERE usuarios.Id = $sqll;";
-        console.log($sql);
-        $result = $conn->query($sql);
+        SET usuarios.Nombre = '$Nombre', usuarios.Apellido= '$Apellido', usuarios.Password= '$Password', usuarios.Correo= '$Correo'
+        WHERE usuarios.Nick = '$Nick';";
+        echo "<br>";
+        echo $sql;
 
-            header("Location: Perfil.php");
+        $result = $conn->query($sql);
+        if(isset($result) && $result){
+          header("Location: Perfil.php");
+        }else{
+                  echo "<br>";        echo "<br>";
+          echo $conn->error;
+        }
+
+
 
 
 
