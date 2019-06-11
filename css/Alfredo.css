@@ -11,6 +11,14 @@ html{
 
 }
 
+.fondoDescripcion{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url("http://73mm.com.pe/wp-content/uploads/2015/07/foto3.jpg");
+    background-position: center center;
+    background-size: 110%;
+}
+
 .BordeInicio{
     opacity: 1;
 

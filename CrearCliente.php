@@ -21,8 +21,43 @@
  ?>
 
 <div class="Contaniner">
+    <div class="espacio2"></div>
+    <h2 class="centroInicio" id="red">Crea una nueva cuenta</h2>
+    <div class="espacio3"></div>
+    <form id="formulario" action="login.php" method="post">
+          <input type="text" class="form-control col-12 offset-lg-5 col-lg-2 text-center" name="Nick" placeholder="Nick"><br>
+          <input type="text" class="form-control col-12 offset-lg-5 col-lg-2 text-center" name="Nombre" placeholder="Nombre"><br>
+          <input type="text" class="form-control col-12 offset-lg-5 col-lg-2 text-center" name="Apellido" placeholder="Apellidos"><br>
+          <input type="text" class="form-control col-12 offset-lg-5 col-lg-2 text-center" name="Contra" placeholder="Contraseña"><br>
+          <input type="text" class="form-control col-12 offset-lg-5 col-lg-2 text-center" name="Correo" placeholder="Correo"><br>
+          <div class="espacio2"></div>
+          <div class="botones col-12 offset-lg-4 col-lg-4">
+            <input type="submit" class="btn btn btn-dark col-12 offset-lg-2 col-lg-4">
+            <a class="btn btn btn-dark col-12 col-lg-4" id="red" href = "CrearCliente.php">No tienes cuenta?</a>
+          </div>
+          <div class="espacio2"></div>
+    </form>
+    <?php
+        $arrErrores = [
+            "noform" => "No se ha enviado el formulario",
+            "notOK" => "Usuario o contraseña incorrecto",
+            "nosesion" => "No hay sesion abierta",
+            "close" => "Se ha cerrado la sesion correctamente",
+            "notServer" => "Los servidores no estan operativos",
+            "0result" => "Hay 0 resultados"
+        ];
 
-
+        if(isset($_GET["error"])){
+            $claveError = $_GET['error'];
+            if(isset($arrErrores[$claveError])){
+                echo "<div class='centro'><font color='red'>$arrErrores[$claveError]</font></div>";
+            }else{
+                echo "<p>Error desconocido</p>";
+            }
+        }
+    ?>
+</div>
+<div class="fondoDescripcion">
 
 </div>
 

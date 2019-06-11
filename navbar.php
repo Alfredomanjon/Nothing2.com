@@ -59,19 +59,21 @@ if(isset($_SESSION['nombre'])){
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-                
-                <?php
-                  if ($result->num_rows > 0) {
-                    //bucle while en el cual fetch_assoc lo convierte en un array ascociativo
-                    while($row = $result->fetch_assoc()) {
-                      echo "<a class='btn btn-link text-secondary' href='Perfil.php'>".$row["Nombre"]."</a>";
-                    }
-                  } else {
-                  echo "0 results";
-                }
-                ?>
-                <a class="btn btn-outline-secondary my-2 my-sm-0" href="cierreSesion.php">Cerrar sesion</a>
-            </form>
+          <a class="navbar-brand" href="index.php">
+          <img src="https://image.flaticon.com/icons/png/512/106/106772.png" width="29" class="logo2">
+          </a>
+          <?php
+            if ($result->num_rows > 0) {
+              //bucle while en el cual fetch_assoc lo convierte en un array ascociativo
+              while($row = $result->fetch_assoc()) {
+                echo "<a class='btn btn-link text-secondary' href='Perfil.php'>".$row["Nombre"]."</a>";
+              }
+            } else {
+            echo "0 results";
+          }
+          ?>
+          <a class="btn btn-outline-secondary my-2 my-sm-0" href="cierreSesion.php">Cerrar sesion</a>
+      </form>
   </div>
 </nav>
 </header>
@@ -106,6 +108,9 @@ if(isset($_SESSION['nombre'])){
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
+      <a class="navbar-brand" href="index.php">
+          <img src="https://image.flaticon.com/icons/png/512/106/106772.png" width="29" class="logo2">
+      </a>
       <button type="button" class=" btn btn-link text-secondary">Hazte Cliente</button>
       <a href="Perfil.php" class=" btn btn-secondary my-2 my-sm-0">Entrar a tu cuenta</a>
     </form>
