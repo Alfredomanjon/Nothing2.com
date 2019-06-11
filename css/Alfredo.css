@@ -158,3 +158,63 @@ text-decoration:none;
 .productos{
     margin: 0;
 }
+
+@media (max-width: 576px) {
+
+    .tituloInicio{
+        text-align: center;
+        padding-top: 15%;
+        font-size: 350%;
+        background: linear-gradient(to right, #c00000 35%, #00A1FF 65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px white;
+    }
+
+    .bajoTitulo{
+        position: relative;
+        text-align: center;
+        margin-top: -2.1%;
+        background: linear-gradient(to right, #c00000 35%, #00A1FF 65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1px 1px white;
+        visibility: hidden;
+    }
+
+    .MenuInicio{
+        color: white;
+        padding-top: 9%;
+        background-image: url("http://www.frcapitalrealty.com/wp-content/uploads/2014/11/Fotolia_68929203_L.jpg");
+        background-position: center center;
+        background-size: 200%;
+        /*este padding hay que quitarlo una vez haya footer*/
+        
+    }
+}
+
+@media (max-width: 768px) {
+
+    .MenuInicio{
+        color: white;
+        padding-top: 9%;
+        background-image: url("http://www.frcapitalrealty.com/wp-content/uploads/2014/11/Fotolia_68929203_L.jpg");
+        background-position: center center;
+        background-size: 300%;
+        /*este padding hay que quitarlo una vez haya footer*/
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .MenuInicio{
+        color: white;
+        padding-top: 9%;
+        background-image: url("http://www.frcapitalrealty.com/wp-content/uploads/2014/11/Fotolia_68929203_L.jpg");
+        background-position: center center;
+        background-size: 200%;
+        /*este padding hay que quitarlo una vez haya footer*/
+    }
+
+}
