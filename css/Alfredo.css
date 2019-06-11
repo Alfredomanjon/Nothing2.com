@@ -21,8 +21,6 @@ html{
 
 .BordeInicio{
     opacity: 1;
-
-
 }
 
 .Background{
@@ -137,9 +135,8 @@ text-decoration:none;
 }
 .arrow{
   text-align: center;
-  font-size: 800%;
+  font-size: 400%;
   text-shadow: 5px 5px white;
-
 }
 
 .MenuInicio{

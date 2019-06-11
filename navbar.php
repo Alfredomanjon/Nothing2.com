@@ -46,14 +46,11 @@ if(isset($_SESSION['nombre'])){
         <a class="nav-link" href="index.php">Productos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="checkout.php">checkout</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="AccederUsuario.php">Sobre Nosotros</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-          <a class="navbar-brand" href="index.php">
+          <a class="navbar-brand" href="checkout.php">
           <img src="https://image.flaticon.com/icons/png/512/106/106772.png" width="29" class="logo2">
           </a>
           <?php
@@ -89,17 +86,11 @@ if(isset($_SESSION['nombre'])){
         <a class="nav-link" href="index.php">Productos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="checkout.php">checkout</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="AccederUsuario.php">Sobre Nosotros</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <a class="navbar-brand" href="index.php">
-          <img src="https://image.flaticon.com/icons/png/512/106/106772.png" width="29" class="logo2">
-      </a>
-      <button type="button" class=" btn btn-link text-secondary">Hazte Cliente</button>
+      <a href="CrearCliente.php" class=" btn btn-link text-secondary">Hazte Cliente</a>
       <a href="Perfil.php" class=" btn btn-secondary my-2 my-sm-0">Entrar a tu cuenta</a>
     </form>
   </div>

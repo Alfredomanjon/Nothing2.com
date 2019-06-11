@@ -38,10 +38,10 @@
     <div class="arrow">
       <a  href="#flecha">
         <img src="imgs/arrowdown.gif" width="140">
-      </div>
-      <div id="flecha">
-      </div>
-      </a>
+    </div>
+    <div id="flecha">
+    </div>
+     </a>
 
 </div>
 
