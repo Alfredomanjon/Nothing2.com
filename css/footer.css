@@ -1,4 +1,4 @@
-#footer 
+.footer 
 {
     background:cross-fade();
     width: 100%;
@@ -26,7 +26,7 @@
 h1 {
     text-align: center;
 
-    font-size: 500%;
+    font-size: 100%;
 	background: linear-gradient(to right, #c00000 35%, #00A1FF 65%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
