@@ -46,13 +46,7 @@ if(isset($_SESSION['nombre'])){
         <a class="nav-link" href="index.php">Productos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="AccederUsuario.php">AccederUsuario</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="checkout.php">checkout</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Perfil.php">Usuario</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="AccederUsuario.php">Sobre Nosotros</a>
@@ -95,13 +89,7 @@ if(isset($_SESSION['nombre'])){
         <a class="nav-link" href="index.php">Productos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="AccederUsuario.php">AccederUsuario</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="checkout.php">checkout</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Perfil.php">Perfil</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="AccederUsuario.php">Sobre Nosotros</a>
