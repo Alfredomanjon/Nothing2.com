@@ -21,7 +21,6 @@
    include 'navbar.php';
 
 
-
   ?>
 
   <div class="fondo1">
@@ -36,8 +35,6 @@
           <input type="text" name="Nombre"> <br>
           <label>Apellido</label><br>
           <input type="text" name="Apellido"> <br>
-          <label>Nick</label><br>
-          <input type="text" name="Nick"> <br>
           <label>Contraseña</label><br>
           <input type="password" name="Password"> <br>
           <label>Correo</label><br>
