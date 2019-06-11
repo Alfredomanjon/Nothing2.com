@@ -41,63 +41,75 @@
       <link href="form-validation.css" rel="stylesheet">
     </head>
     <body class="bg-light">
+      <div class="fondo2">
+        <div class="container">
+          <br><br>
+          <div class="row justify-content-center text-center">
+            <div class="col-4 BordePerfil">
 
-      <div class="container">
-        <br><br>
+              <div class="row py-3 justify-content-center text-center">
 
-        <div class="py-5 text-center">
+                <h2>Tu Perfil sin Nada <a href="ModificarUsuario.php"><img src="imgs/opciones.png" alt="Settings" style="width:30px;height:30px;"></a></h2>
 
-          <h2>Tu Perfil sin Nada</h2>
-        </div>
-
-        <div class="row text-center">
-
-          <div class="col-12 nick">
-            <?php echo "Nick: " . $row["Nick"]  ?>
-          </div>
-          <div class="col-12 nombre">
-            <?php echo "Nombre: " . $row["Nombre"]  ?>
-          </div>
-          <div class="col-12 apellido">
-            <?php echo "Apellido: " . $row["Apellido"]  ?>
-          </div>
-          <div class="col-12 correo">
-            <?php echo "Correo: " . $row["Correo"]  ?>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-6 ">
-            <br><a href="listaDeseados.php"><img src="imgs/listaDeseados.png" alt="listaDeseados" style="width:128px;height:128px;">
-          </div>
-          <div class="col-5 ">
-            <br><a href="ModificarUsuario.php"><img src="imgs/9e7f16e0-af19-4a8b-89a2-78faa8aad2fb_200x200.png" alt="Settings" style="width:128px;height:128px;">
-          </div>
+              </div>
+              <div class="row text-center justify-content-center">
+                <?php echo "Nick: ". "&nbsp" ?>
+                <div class="border rounded">
+                  <?php echo $row["Nick"]  ?>
+                </div>
+              </div>
+              <br>
+              <div class="row text-center justify-content-center">
+                <?php echo "Nombre: ". "&nbsp" ?>
+                <div class="border rounded">
+                  <?php echo $row["Nombre"]  ?>
+                </div>
+              </div>
+              <br>
+              <div class="row text-center justify-content-center">
+                <?php echo "Apellido: ". "&nbsp" ?>
+                <div class="border rounded">
+                  <?php echo $row["Apellido"]  ?>
+                </div>
+              </div>
+              <br>
+              <div class="row text-center justify-content-center">
+                <?php echo "Correo: ". "&nbsp" ?>
+                <div class="border rounded">
+                  <?php echo $row["Correo"]  ?>
+                </div>
+              </div>
+              <br>
             </div>
           </div>
-          <?php
-        }
-      } else {
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+      </div>
 
-        header("Location: AccederUsuario.php?error=notOK");
+      <?php
+    }
+  } else {
 
-      }
-      $conn->close(); // cierre de conexión con la BBDD
+    header("Location: AccederUsuario.php?error=notOK");
 
-      ?>
+  }
+  $conn->close(); // cierre de conexión con la BBDD
 
-
-
-
-
-
-
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-      <script src="../../assets/js/vendor/popper.min.js"></script>
-      <script src="../../dist/js/bootstrap.min.js"></script>
-      <script src="../../assets/js/vendor/holder.min.js"></script>
+  ?>
 
 
 
-    </body>
-    </html>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/vendor/holder.min.js"></script>
+
+
+
+</body>
+</html>
