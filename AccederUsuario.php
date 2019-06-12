@@ -45,7 +45,8 @@
                 "nosesion" => "No hay sesion abierta",
                 "close" => "Se ha cerrado la sesion correctamente",
                 "notServer" => "Los servidores no estan operativos",
-                "0result" => "Hay 0 resultados"
+                "0result" => "Hay 0 resultados",
+                "AddOK" => "Se ha añadido tu cuenta correctamente, ahora registrate"
             ];
 
             if(isset($_GET["error"])){
