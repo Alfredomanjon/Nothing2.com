@@ -182,20 +182,20 @@ text-decoration:none;
     position: fixed;
     top: 0;
     z-index: 9999;
-    height: 12%;
+    height: 11%;
     width: 100%;
-    background: #324c5f;
-    color: #fff;
-    line-height: 150px;
+    line-height: 11%;
       -webkit-transition: height .5s, line-height .5s; /* Safari */
       transition: height .5s, line-height .5s;
   }
   .scrolled-nav {
     height: 7% !important;
-    line-height: 60px !important;
+    line-height: 7% !important;
   }
   .scrolled-nav .site-title  {
-    width: 45%;
+    width: 30%;
+    -webkit-transition: height .5s, line-height .5s; /* Safari */
+    transition: height .5s, line-height .5s;
   }
 
 
