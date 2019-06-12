@@ -42,8 +42,8 @@
     </head>
     <body class="bg-light fondo2">
         <div class="container">
-          <br><br>
-          <div class="row justify-content-center text-center">
+          
+          <div class="row justify-content-center text-center perfilTop">
             <div class="col-4 BordePerfil Background">
 
               <div class="row py-3 justify-content-center text-center">
