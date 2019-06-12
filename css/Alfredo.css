@@ -60,7 +60,6 @@ html{
 }
 
 
-
 /* .navbar {
   background-color: transparent !important;
   color: white;
@@ -176,6 +175,55 @@ text-decoration:none;
 .productos{
     margin: 0;
 }
+
+
+
+#global-nav {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    height: 12%;
+    width: 100%;
+    background: #324c5f;
+    color: #fff;
+    line-height: 150px;
+      -webkit-transition: height .5s, line-height .5s; /* Safari */
+      transition: height .5s, line-height .5s;
+  }
+  .scrolled-nav {
+    height: 7% !important;
+    line-height: 60px !important;
+  }
+  .scrolled-nav .site-title  {
+    width: 45%;
+  }
+
+
+
+  
+  /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+  @media screen and (max-width: 580px) {
+    #navbar {
+      padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+    }
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #navbar-right {
+      float: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 576px) {
 

@@ -11,6 +11,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <link rel=StyleSheet href="css/Alfredo.css" type="text/css" media=screen>
     <link rel="icon" type="image/jpg" href="imagenes/logo_copia1.png">
+    <script src="js/altura.js"></script>
 </head>
 <body>
 <?php
@@ -33,9 +34,9 @@ if(isset($_SESSION['nombre'])){
    $result = $conn->query($sql);
 ?>
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id="global-nav" class="nav navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="index.php">
-    <img src="imgs/logo100px.png" width="140" class="logo2">
+    <img src="imgs/logo100px.png" width="140" class="logo2 site-title">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -72,10 +73,10 @@ if(isset($_SESSION['nombre'])){
 <?php
 }else{?>
 
-<header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header >
+<nav id="global-nav" class="nav navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="index.php">
-    <img src="imgs/logo100px.png" width="140" class="logo2">
+    <img src="imgs/logo100px.png" width="140" class="logo2 site-title">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
