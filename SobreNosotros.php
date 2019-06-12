@@ -31,20 +31,55 @@
 
     <h2 class="tituloInicio2">Sobre Nosotros</h2>
 
-    <div class="espacio5"></div>
-
     <div class="presentacion">
 
         <p class="centro1 col-12 offset-lg-4 col-lg-4">Somos un pequeño grupo de inovadores con la idea de poder dar un producto simple y sencillo
         al mejor precio , nuestra idea es dar el mejor servicio posible y que disfrutes de tu 
         compra tanto como nosotos</p>
-        
+
     </div>
+
+    <div class="espacio2"></div>
+
+    <hr>
+
+    <div class="productos">
+        
+
+        <h3 class="centro">Nuestros productos</h3>
+
+        <p class="centro1 col-12 offset-lg-4 col-lg-4">Al igual que tu queremos que nuestros productos sena de un calidad perfecta, por 
+            eso revisamos a diario nuestros productos para garantizar una calidada a Nuestros
+            clientes
+        </p>
+    </div>
+
+    <div class="espacio2"></div>
+
+    <hr>
+
+    <div class="productos">
+        
+
+        <h3 class="centro">Nuestro Proposito</h3>
+
+        <p class="centro1 col-12 offset-lg-4 col-lg-4">Al igual que tu queremos que nuestros productos sena de un calidad perfecta, por 
+            eso revisamos a diario nuestros productos para garantizar una calidada a Nuestros
+            clientes
+        </p>
+    </div>
+
+    <div class="espacio2"></div>
 
 <?php
 
     }
 
 ?>
+</body>
+<?php
 
+  include 'footer.php';
+
+?>
 </html>

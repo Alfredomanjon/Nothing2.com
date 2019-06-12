@@ -66,4 +66,9 @@
     <div class="espacio1"></div>
   </div>
 </body>
+<?php
+
+  include 'footer.php';
+
+?>
 </html>

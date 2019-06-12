@@ -177,6 +177,8 @@ text-decoration:none;
     margin: 0;
 }
 
+hr { margin: 0 40% 0 40%; }
+
 @media (max-width: 576px) {
 
     .tituloInicio{
