@@ -63,6 +63,51 @@ text-decoration:none;
     display: block;
     margin:0 auto;
 }
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+button{
+  background:#696969;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:black;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: linear-gradient(to right, #c00000 35%, #00A1FF 60%);
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
 .centroInicio{
     padding-top: 3%;
     padding-bottom: 3%;
@@ -73,11 +118,16 @@ text-decoration:none;
     text-align: center;
 }
 #Nada{
-    width: 50%;
-    height: 50%;
+  width: 50%;
+  height: 50%;
+    text-align: right;
 }
 .centro{
     text-align: center;
+    margin: 2%;
+}
+.centro2{
+    height: 10%;
     margin: 2%;
 }
 

@@ -41,7 +41,7 @@ html{
     border-image-slice: 1;
     height: 100%;
     width: 100%;
-    transition: all 0.6s;
+    transition: all 1.6s;
     color: black;
 
 }
@@ -53,7 +53,7 @@ html{
     border-image-slice: 1;
     height: 103%;
     width: 103%;
-    transition: all 0.6s;
+    transition: all 1.6s;
     color: black;
 
 
@@ -194,7 +194,7 @@ text-decoration:none;
         background-position: center center;
         background-size: 200%;
         /*este padding hay que quitarlo una vez haya footer*/
-        
+
     }
 }
 

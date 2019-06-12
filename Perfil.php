@@ -40,12 +40,11 @@
       <!-- Custom styles for this template -->
       <link href="form-validation.css" rel="stylesheet">
     </head>
-    <body class="bg-light">
-      <div class="fondo2">
+    <body class="bg-light fondo2">
         <div class="container">
           <br><br>
           <div class="row justify-content-center text-center">
-            <div class="col-4 BordePerfil">
+            <div class="col-4 BordePerfil Background">
 
               <div class="row py-3 justify-content-center text-center">
 
@@ -84,7 +83,7 @@
           </div>
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
-      </div>
+
 
       <?php
     }

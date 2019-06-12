@@ -7,19 +7,36 @@
 }
 .fondo2{
     text-align: center;
-    background-image: url("https://image.freepik.com/foto-gratis/gato-mirando-pared_23-2147888607.jpg");
+    background-image: url("https://static1.squarespace.com/static/5b6055f545776e3f11a43de7/t/5b62d6541ae6cf5b125ba36b/1533208166415/white-brick-wall.png?format=2500w");
     background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 60%;
+
+    background-size: 100%;
+}
+.Background{
+    background-color:rgba(255,255,255,0.7);
+}
+
+
+.BordePerfil{
+    border: 5px solid;
+    border-color: #696969;
+    border-image-slice: 1;
+    height: 100%;
+    width: 100%;
+    transition: all 1.6s;
+    color: black;
 
 }
-.BordePerfil{
 
-  border: 5px solid;
-  border-image-source: linear-gradient(to right, #c00000 , #00A1FF);
-  border-image-slice: 1;
-  height: 100%;
-  width: 100%;
-  transition: all 0.6s;
-  color: black;
+.BordePerfil:hover{
+
+    border: 5px solid;
+    border-image-source: linear-gradient(to right, #c00000 , #00A1FF);
+    border-image-slice: 1;
+    height: 103%;
+    width: 103%;
+    transition: all 1.6s;
+    color: black;
+
+
 }

@@ -39,30 +39,73 @@
 
     $sql = "SELECT * FROM `productos` WHERE id_producto=$var_value";
     $result1 = $conn->query($sql);
-    echo "<div class='container rainbow_border'>";
+    echo "<div class='row'>";
+
+    echo "<div class='container col-11 '>";
     echo "<div class='container-fluid'>";
-    echo "<div class='row col-12'>";
+
+    echo "<div class='row'>";
+
+
     if ($result1->num_rows > 0) {
 
         //bucle while en el cual fetch_assoc lo convierte en un array ascociativo
 
         while($row = $result1->fetch_assoc()) {
             $numId = $row["id_producto"];
-            echo "<div class='col-3 mb-4' id='producto'>";
-            echo "<div class='producto'>";
-            echo "<br>";
-            echo "<div class='imagenProducto'>";
-            echo "<img src=".$row["Foto"]." class='center' id='Nada'>";
-            echo "</div>";
-            echo "<br>";
-            echo "<h3 class='centro2'>".$row["Nombre"]."</h3>";
-            echo "<h3 class='centro2'>".$row["Precio"]."€</h3>";
-            echo "<br>";
-			$idProduct = $row["id_producto"];
-			echo "<a href='addCarrito.php?id_producto=$idProduct' > Añadir al carrito </a>";
-            echo "</div>";
-            echo "</a>";
-            echo "</div>";
+
+
+?>
+
+
+  <?php
+    echo "<img id='Nada' class='float-right ' src=".$row["Foto"]."  >";
+
+    echo "<div class='container col-6 '>";
+    echo "<div class='container-fluid'>";
+    echo "<div class='row'>";
+    ?>
+
+
+
+
+            <div class="container">
+    <div class="row">
+
+    <div class="col">
+    <?php
+      echo "<h1 >".$row["Nombre"]."</h1>";
+    ?>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+      <?php
+    echo "<h3  >".$row["Descripcion"]."</h3>";
+    ?>
+    </div>
+    <div class="col">
+      <?php
+      $idProduct = $row["id_producto"];
+    echo "<button href='addCarrito.php?id_producto=$idProduct' > Añadir al carrito </button>";
+    echo "<h3 class='' >".$row["Precio"]."€</h3>";
+    ?>
+    </div>
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+</div>
+
+
+<?php
+
 
 
 
