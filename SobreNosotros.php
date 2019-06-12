@@ -63,9 +63,9 @@
 
         <h3 class="centro">Nuestro Proposito</h3>
 
-        <p class="centro1 col-12 offset-lg-4 col-lg-4">Al igual que tu queremos que nuestros productos sena de un calidad perfecta, por 
-            eso revisamos a diario nuestros productos para garantizar una calidada a Nuestros
-            clientes
+        <p class="centro1 col-12 offset-lg-4 col-lg-4">Nuestro proposito desde que se fundó Nothing.com ha sido dar el mejor
+            producto con el mejor servicio posible , por eso llevamos años trabajando en ello y dia a dia nuesro proposito se va haciendo 
+            realidad
         </p>
     </div>
 

@@ -24,7 +24,7 @@
     <div class="espacio2"></div>
     <h2 class="centroInicio" id="red">Crea una nueva cuenta</h2>
     <div class="espacio3"></div>
-    <form id="formulario" action="login.php" method="post">
+    <form id="formulario" action="AñadirCliente.php" method="post">
           <input type="text" class="form-control col-12 offset-lg-5 col-lg-2 text-center" name="Nick" placeholder="Nick"><br>
           <input type="text" class="form-control col-12 offset-lg-5 col-lg-2 text-center" name="Nombre" placeholder="Nombre"><br>
           <input type="text" class="form-control col-12 offset-lg-5 col-lg-2 text-center" name="Apellido" placeholder="Apellidos"><br>
