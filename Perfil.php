@@ -13,7 +13,7 @@
   <title>Tu Perfil sin Nada</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
-
+  <link href="form-validation.css" rel="stylesheet">
   <?php
   $servername = "localhost";
   $user = "root";
@@ -37,12 +37,12 @@
 
       ?>
 
-      <!-- Custom styles for this template -->
-      <link href="form-validation.css" rel="stylesheet">
+
+
     </head>
     <body class="bg-light fondo2">
         <div class="container">
-          
+
           <div class="row justify-content-center text-center perfilTop">
             <div class="col-4 BordePerfil Background">
 

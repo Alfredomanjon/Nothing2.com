@@ -16,11 +16,26 @@
 
   <?php
 
-
-
    include 'navbar.php';
 
+   $servername = "localhost";
+   $user = "root";
+   $password = "";
+   $dbname = "latiendaenclase1";
+   $conn = new mysqli($servername, $user,$password,
+   $dbname);
+   // Check connection
+   if ($conn->connect_error) {
+     die("Error: " . $conn->connect_error);
+   }else
+   echo "" ;
 
+   $Nick = $_SESSION["nombre"];
+   $sql = "SELECT * FROM usuarios WHERE Nick = '$Nick' ";
+
+   $result = $conn->query($sql);
+   if ($result->num_rows > 0) {
+     while($row = $result->fetch_assoc()) {
 
   ?>
 
@@ -35,13 +50,13 @@
         <div class="espacio1"></div>
         <form id="formulario" action="modifica.php" method="post">
           <label>Nombre</label><br>
-          <input type="text" name="Nombre"> <br>
+          <input type="text" name="Nombre" value=<?php echo $row["Nombre"] ?> >  <br>
           <label>Apellido</label><br>
-          <input type="text" name="Apellido"> <br>
+          <input type="text" name="Apellido" value=<?php echo $row["Apellido"] ?> > <br>
           <label>Contraseña</label><br>
-          <input type="password" name="Password"> <br>
+          <input type="password" name="Password" value=<?php echo $row["Password"] ?> > <br>
           <label>Correo</label><br>
-          <input type="text" name="Correo"> <br>
+          <input type="text" name="Correo" value=<?php echo $row["Correo"] ?> > <br>
           <div class="espacio1"></div>
           <div class="botones col-12">
             <input type="submit" class="btn btn btn-dark col-5">
@@ -49,6 +64,16 @@
           <div class="espacio4"></div>
           </form>
           <?php
+
+        }
+      } else {
+
+        header("Location: AccederUsuario.php?error=notOK");
+
+      }
+
+
+
             $arrErrores = [
                 "noform" => "No se ha enviado el formulario",
                 "nosesion" => "No hay sesion abierta",
@@ -65,6 +90,7 @@
                     echo "<p>Error desconocido</p>";
                 }
             }
+            $conn->close(); // cierre de conexión con la BBDD
           ?>
         <div class="espacio1"></div>
       </div>
