@@ -46,7 +46,7 @@ if(isset($_SESSION['nombre'])){
         <a class="nav-link" href="index.php">Productos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="AccederUsuario.php">Sobre Nosotros</a>
+        <a class="nav-link" href="SobreNosotros.php">Sobre Nosotros</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -86,7 +86,7 @@ if(isset($_SESSION['nombre'])){
         <a class="nav-link" href="index.php">Productos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="AccederUsuario.php">Sobre Nosotros</a>
+        <a class="nav-link" href="SobreNosotros.php">Sobre Nosotros</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
