@@ -51,7 +51,7 @@ if(isset($_SESSION['nombre'])){
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-          <a class="navbar-brand" href="checkout.php">
+          <a class="navbar-brand" href="addCarrito.php">
           <img src="https://image.flaticon.com/icons/png/512/106/106772.png" width="29" class="logo2">
           </a>
           <?php

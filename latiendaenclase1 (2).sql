@@ -26,6 +26,20 @@ USE `latiendaenclase1`;
 
 -- --------------------------------------------------------
 
+DELIMITER $$
+--
+-- Procedimientos
+--
+DROP PROCEDURE IF EXISTS `ABRIR_CUENTA`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ABRIR_CUENTA` (IN `nick` VARCHAR(15), IN `password` VARCHAR(15), IN `nombre` VARCHAR(25), IN `apellido` VARCHAR(35), IN `correo` VARCHAR(30))  NO SQL
+BEGIN
+INSERT INTO usuarios (Nick,Password,Nombre,Apellido,Correo)
+VALUES
+(nick,password,nombre,apellido,correo);
+
+END$$
+
+DELIMITER ;
 --
 -- Estructura de tabla para la tabla `pedidos`
 --

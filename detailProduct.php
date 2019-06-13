@@ -87,7 +87,7 @@
     <div class="col">
       <?php
       $idProduct = $row["id_producto"];
-    echo "<button href='addCarrito.php?id_producto=$idProduct' > Añadir al carrito </button>";
+    echo "<a href='addCarrito.php?id_producto=$idProduct'> Añadir al carrito </a>";
     echo "<h3 class='' >".$row["Precio"]."€</h3>";
     ?>
     </div>
